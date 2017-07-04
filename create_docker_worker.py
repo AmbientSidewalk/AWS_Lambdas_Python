@@ -17,7 +17,7 @@ import sys, getopt, boto3
 #         elif opt in ("-o", "--ofile"):
 #             outputfile = arg
 
-EC2_CLIENT = ec2_client=boto3.client('ec2')
+EC2_CLIENT = boto3.client('ec2')
 DEFAULT_AMI_TAG_TYPE = 'Docker Base'
 DEFAULT_AMI_TAG_RELEASE = 'Prod'
 RELEASE_TAG_VALUES = ['Prod', 'UAT', 'Test']
